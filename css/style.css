@@ -1,0 +1,435 @@
+/*installed font*/
+@font-face {
+    font-family: 'Calling-Card';
+    src: url('../fonts/earwig_factory/earwig factory rg.otf');
+}
+@font-face {
+    font-family: 'Arsenal-Regular';
+    src: url('../fonts/Arsenal/Arsenal-Regular.ttf');
+}
+@font-face {
+    font-family: 'Arsenal-Bold';
+    src: url('../fonts/Arsenal/Arsenal-Bold.ttf');
+}
+@font-face {
+    font-family: 'P5';
+    src: url('../fonts/p5.ttf');
+}
+/*resetting some default styles and style*/
+a, li, ul, ol{
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
+p, h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+    font-family: 'Arsenal-Bold', sans-serif;
+}
+html{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+/*wrapper*/
+.wrapper{
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
+}
+/*styling the body*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+/*styling the logo*/
+.logo{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-color: #fd0000;
+    width: 100%;
+    height: 15rem;
+}
+.logo-img{
+    height: 10rem;
+    padding-top: 1rem;
+}
+.logo a{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo-name{
+    display: flex;
+    height: 100%;
+    font-size: 2rem;
+    font-family: 'Calling-Card', sans-serif;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+/*Styling nav bar*/
+.nav-outside-wrapper{
+    width: 100%;
+    height: 5rem;
+    background-color: #323332;
+}
+.nav{
+    height: 100%;
+    display: flex;
+    padding: 0;
+    flex-grow: 1;
+    margin: 0 auto;
+    background-color: #323332;
+    width: 100%;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.nav a{
+    font-size: 3rem;
+    font-family: P5, sans-serif;
+    color: white;
+}
+/*style the decription*/
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    color: #fd0000;
+}
+/*make a line*/
+.line-separator{
+    width: 100%;
+    height: 0.1875rem;
+    background-color: #530201;
+    margin: 2rem 0;
+}
+.line-separator-two{
+    width: 100%;
+    height: 0.1875rem;
+    background-color: #fe1015;
+    margin: 2rem 0;
+}
+/* style that block thing*/
+.block{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+    padding-bottom: 2rem;
+}
+/* all img the same line and size*/
+.brand-logo{
+    height: 7rem;
+    object-fit: cover;
+    object-position: center;
+}
+.sega-logo{
+    width: 90%;
+}
+/*style the h3 in .list-all*/
+.list-all a h3{
+    font-weight: 300;
+}
+/*style the footer*/
+.footer{
+    width: 100%;
+    height: 10rem;
+    background-color: #8c0202;
+    margin-top: 2rem;
+}
+.footer-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+.footer-logo{
+    height: 100%;
+}
+.footer-logo-img{
+    height: 50%;
+    margin-top: 2rem;
+    object-fit: cover;
+    object-position: center;
+}
+.footer-contact{
+    display: flex;
+    flex-direction: row-reverse;
+}
+/*about us page styling*/
+.about-us-container{
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.about-us-container-anotherone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.about-us-container-anotherone-inside-anotherone{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'Arsenal-Regular', sans-serif;
+    width: 80%;
+    color: #fd0000;
+}
+.about-us p{
+    margin: 1rem;
+}
+.about{
+    font-size: 6rem;
+    font-family: 'Arsenal-Bold', sans-serif;
+    font-weight: 1000;
+    letter-spacing: 0.2rem;
+}
+/* styling contact page*/
+.contact{
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+
+}
+.contact-container-outside-wrapper{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.contact-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contact-container-anotherone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.contact-logo{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'Arsenal-Regular', sans-serif;
+    width: 100%;
+    color: white;
+}
+.contact-logo-name{
+    font-size: 6rem;
+}
+/*style the shop page*/
+.shop-outside-wrapper{
+    min-height: 100vh;
+}
+.all-systems{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+.shop-container{
+    margin: 3rem 0;
+}
+.brand-name{
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    font-family: 'P5', sans-serif;
+    color: #fd0000;
+}
+.grid-all-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-gap: 2rem;
+}
+.item-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: rgba(202, 202, 202, 0.8);
+    overflow: hidden;
+    min-height: 20rem;
+}
+.items-imgs-container{
+    width: 20rem;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+.items-imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
+}
+.item-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.item-details p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    font-family: 'Arsenal-Bold', sans-serif;
+}
+/*Styling the page for product*/
+.product-page-outside-wrapper{
+    min-height: 70vh;
+    width: 100%;
+}
+.product-page-container{
+    height:80%;
+    margin: 0 auto;
+}
+.grid-product-page{
+    display: grid;
+    margin-top: 3rem;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+.product-page-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.product-page-image img{
+    margin: 0 auto;
+    object-position: center;
+    overflow: hidden;
+}
+.produt-page-system-details{
+    height: auto;
+}
+.product-page-name-price{
+    font-size: 3rem;
+    font-family: 'Arsenal-Bold', sans-serif;
+}
+.product-page-name-price p{
+    margin: 1rem 0;
+}
+.product-page-system-price{
+    color: #fe0f00;
+    font-size: 2rem;
+}
+.product-page-description{
+    font-size: 1.5rem;
+    font-family: 'Arsenal-Regular', sans-serif;
+}
+.product-page-description p{
+    margin: 1rem 0;
+}
+.add-to-cart{
+    height: 3rem;
+}
+.add-to-cart-button-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-to-cart button{
+    width: 50%;
+    height: 100%;
+    font-size: 2rem;
+    font-family: 'Arsenal-Bold', sans-serif;
+    background-color: #fd0000;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-to-cart button img{
+    height: 100%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wrapper{
+        width: 90%;
+    }
+   html{
+       font-size: 10px;
+   }
+}
+@media (max-width: 361px){
+    html{
+        font-size: 8px;
+    }
+    .wrapper{
+        width: 90%;
+    }
+}
