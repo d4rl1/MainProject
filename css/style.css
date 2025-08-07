@@ -159,7 +159,6 @@ header{
     width: 100%;
     height: 10rem;
     background-color: #8c0202;
-    margin-top: 2rem;
 }
 .footer-content{
     height: 100%;
@@ -245,6 +244,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
 }
 .contact-container-anotherone{
@@ -255,7 +255,7 @@ header{
     height: 100%;
 }
 .contact-logo{
-    height: 30%;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,9 +269,78 @@ header{
     font-family: 'Arsenal-Regular', sans-serif;
     width: 100%;
     color: white;
+    height: 40%
 }
 .contact-logo-name{
-    font-size: 6rem;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 20%;
+}
+.contact-logo-name p{
+    padding: 0;
+    margin: 0;
+    font-size: 5rem;
+}
+/*style the contact form*/
+.contact-form{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    margin : 1rem;
+}
+form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    font-family: 'Arsenal-Regular', sans-serif;
+}
+form input{
+    width: 80%;
+    height: 3rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-family: 'Arsenal-Regular', sans-serif;
+}
+form textarea{
+    width: 80%;
+    height: 80%;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-family: 'Arsenal-Regular', sans-serif;
+    overflow: scroll;
+}
+form input::placeholder, textarea::placeholder{
+    font-size: 1.5rem;
+    color: red;
+}
+form button{
+    width: 30%;
+    height: 3rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #fd0000;
+    color: white;
+    cursor: pointer;
+    font-family: 'Arsenal-Bold', sans-serif;
 }
 /*style the shop page*/
 .shop-outside-wrapper{
@@ -417,6 +486,14 @@ header{
 
 
 /* Responsive Design */
+@media (max-width: 1182px) {
+    .add-to-cart button{
+        font-size: 1.5rem;
+    }
+    html{
+        font-size: 14px;
+    }
+}
 @media (max-width: 768px) {
     .wrapper{
         width: 90%;
